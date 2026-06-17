@@ -3,9 +3,7 @@ package main
 import (
 	"fmt"
 	"io"
-	"os"
-	"path/filepath"
-	"strings"
+	"os
 
 	"github.com/cli/cli/v2/internal/config"
 	"github.com/cli/cli/v2/internal/docs"
@@ -129,6 +127,4 @@ func (e *em) Create(_ string, _ extensions.ExtTemplateType) error {
 
 func (e *em) EnableDryRunMode() {}
 
-func (e *em) UpdateDir(_ string) string {
-	return ""
-}
+func (e *em
